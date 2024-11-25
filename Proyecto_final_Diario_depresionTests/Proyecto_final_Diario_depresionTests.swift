@@ -1,9 +1,4 @@
-//
-//  Proyecto_final_Diario_depresionTests.swift
-//  Proyecto_final_Diario_depresionTests
-//
-//  Created by Jorge Alberto de Jesus Cortinas Avila on 06/11/24.
-//
+
 
 import Testing
 @testable import Proyecto_final_Diario_depresion

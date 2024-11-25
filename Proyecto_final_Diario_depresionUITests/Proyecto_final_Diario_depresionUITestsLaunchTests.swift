@@ -1,9 +1,4 @@
-//
-//  Proyecto_final_Diario_depresionUITestsLaunchTests.swift
-//  Proyecto_final_Diario_depresionUITests
-//
-//  Created by Jorge Alberto de Jesus Cortinas Avila on 06/11/24.
-//
+
 
 import XCTest
 

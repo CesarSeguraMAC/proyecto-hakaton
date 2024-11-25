@@ -1,24 +1,659 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="on8-OD-iZ4">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--calendario-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="calendario" modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="Mostrar_Titulos_Notas" customModule="Proyecto_final_Diario_depresion" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="803"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dhY-zy-MRa">
+                                <rect key="frame" x="0.0" y="65" width="393" height="738"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="okm-TK-K0A">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="200"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ilz-m1-Gvi">
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="50"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8xf-9u-XwL">
+                                                <rect key="frame" x="0.0" y="50" width="393" height="50"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FxU-Y7-lOp">
+                                                <rect key="frame" x="0.0" y="100" width="393" height="50"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Wd-5M-wAo">
+                                                <rect key="frame" x="0.0" y="150" width="393" height="50"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="okm-TK-K0A" firstAttribute="width" secondItem="dhY-zy-MRa" secondAttribute="width" id="EcL-3D-mUk"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="cXJ-7z-A3c"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="3Xg-Fk-iJ3"/>
+                            </scrollView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.98823529480000005" green="0.97254902119999997" blue="0.84313726430000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="dhY-zy-MRa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="6EC-Z5-DK3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dhY-zy-MRa" secondAttribute="bottom" id="dvD-oW-F9f"/>
+                            <constraint firstItem="dhY-zy-MRa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="eJQ-8l-ztR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dhY-zy-MRa" secondAttribute="trailing" id="m3R-9T-DDR"/>
+                            <constraint firstItem="dhY-zy-MRa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ruK-au-tTA"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Ver recordatorios" springLoaded="YES" id="F09-rt-ACp">
+                        <imageReference key="image" image="calendar" catalog="system" symbolScale="small"/>
+                        <color key="badgeColor" red="1" green="0.71372549019999998" blue="0.87450980389999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <imageReference key="selectedImage" image="calendar" catalog="system" symbolScale="default"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="Pila_de_botones" destination="okm-TK-K0A" id="zZl-rr-ZDv"/>
+                        <segue destination="62x-Qu-EqK" kind="presentation" identifier="S2" id="bEx-Ci-XTA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1267.9389312977098" y="-258.45070422535213"/>
+        </scene>
+        <!--Habitos-->
+        <scene sceneID="Ztg-jD-Lqy">
+            <objects>
+                <viewController title="Habitos" modalPresentationStyle="fullScreen" id="C5N-UB-uG7" customClass="Habitos" customModule="Proyecto_final_Diario_depresion" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cqg-mU-M0G">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="769"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e57-oF-QKK">
+                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="61W-Xb-Chr">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="581.33333333333337"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TIPS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vKl-qH-QwQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="41.333333333333336"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="38"/>
+                                                <color key="textColor" red="0.83631234219999995" green="0.50460702899999998" blue="0.44808243260000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Jp-tp-qGR">
+                                                <rect key="frame" x="0.0" y="41.333333333333329" width="393" height="50"/>
+                                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="20"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jiy-aM-pIO">
+                                                <rect key="frame" x="0.0" y="91.333333333333343" width="393" height="85"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="beber agua"/>
+                                                <connections>
+                                                    <action selector="Bebe_agua:" destination="C5N-UB-uG7" eventType="touchUpInside" id="S2W-UR-jy6"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dZ1-Xg-V4Y">
+                                                <rect key="frame" x="0.0" y="176.33333333333334" width="393" height="50"/>
+                                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="20"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dW7-I5-eNF">
+                                                <rect key="frame" x="0.0" y="226.33333333333331" width="393" height="85"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="Hacer Ejercicio"/>
+                                                <connections>
+                                                    <action selector="Hacer_Ejercicio:" destination="C5N-UB-uG7" eventType="touchUpInside" id="6m4-hA-LWo"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qnr-fR-Mlz">
+                                                <rect key="frame" x="0.0" y="311.33333333333331" width="393" height="50"/>
+                                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="20"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ppA-L9-s2S">
+                                                <rect key="frame" x="0.0" y="361.33333333333331" width="393" height="85"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="despertar temprano"/>
+                                                <connections>
+                                                    <action selector="Despertar_temprano:" destination="C5N-UB-uG7" eventType="touchUpInside" id="1yd-Xf-DPb"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8uJ-Jk-G6D">
+                                                <rect key="frame" x="0.0" y="446.33333333333331" width="393" height="50"/>
+                                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="20"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YzB-3U-iUD">
+                                                <rect key="frame" x="0.0" y="496.33333333333337" width="393" height="85"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="frutas y verduras"/>
+                                                <connections>
+                                                    <action selector="Despertar_temprano:" destination="C5N-UB-uG7" eventType="touchUpInside" id="F5c-VY-CB7"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="61W-Xb-Chr" firstAttribute="width" secondItem="e57-oF-QKK" secondAttribute="width" id="3x4-KF-2vZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="61W-Xb-Chr" secondAttribute="bottom" constant="8" id="4aW-c9-95U"/>
+                                    <constraint firstItem="61W-Xb-Chr" firstAttribute="top" secondItem="e57-oF-QKK" secondAttribute="top" id="OI4-pW-G82"/>
+                                    <constraint firstAttribute="trailing" secondItem="61W-Xb-Chr" secondAttribute="trailing" constant="-32" id="kKq-sJ-xql"/>
+                                    <constraint firstItem="61W-Xb-Chr" firstAttribute="leading" secondItem="e57-oF-QKK" secondAttribute="leading" id="sSg-JN-yfC"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="pWm-P1-dVK"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="YGy-eZ-MZX"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oUt-Hv-2WU"/>
+                        <color key="backgroundColor" red="0.98823529480000005" green="0.97254902119999997" blue="0.84313726430000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="oUt-Hv-2WU" firstAttribute="trailing" secondItem="e57-oF-QKK" secondAttribute="trailing" id="Gh8-m5-fxz"/>
+                            <constraint firstItem="oUt-Hv-2WU" firstAttribute="bottom" secondItem="e57-oF-QKK" secondAttribute="bottom" id="QV5-mr-3aH"/>
+                            <constraint firstItem="e57-oF-QKK" firstAttribute="leading" secondItem="oUt-Hv-2WU" secondAttribute="leading" id="bka-af-bZM"/>
+                            <constraint firstItem="e57-oF-QKK" firstAttribute="top" secondItem="oUt-Hv-2WU" secondAttribute="top" id="hz7-mV-SeV"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Habitos" springLoaded="YES" id="zRr-RR-zxg">
+                        <imageReference key="image" image="person.circle" catalog="system" symbolScale="small"/>
+                        <imageReference key="selectedImage" image="person.circle" catalog="system" symbolScale="default"/>
+                    </tabBarItem>
+                    <connections>
+                        <segue destination="qyh-n5-jSF" kind="presentation" identifier="S1" id="5eQ-Mr-x8q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="htU-oQ-bIt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1267.9389312977098" y="450.7042253521127"/>
+        </scene>
+        <!--Cargar habito-->
+        <scene sceneID="Z5y-6K-I1Q">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="qyh-n5-jSF" customClass="Cargar_habito" customModule="Proyecto_final_Diario_depresion" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ezm-8k-Iva">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oY5-48-lpq">
+                                <rect key="frame" x="0.0" y="49" width="114" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="flecha" title=""/>
+                                <connections>
+                                    <segue destination="on8-OD-iZ4" kind="presentation" id="1oR-ph-a4y"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dulce" translatesAutoresizingMaskIntoConstraints="NO" id="DoB-y0-6AI">
+                                <rect key="frame" x="119" y="188" width="155" height="144"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.25050341939999998" green="0.48991722389999998" blue="0.96658998730000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="3UO-lY-FQ4">
+                                <rect key="frame" x="63" y="419" width="290" height="161"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UJM-Uf-wlq">
+                                <rect key="frame" x="35" y="118" width="323" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="37"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.34999999999999998" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pizarron_pantalla_carga" translatesAutoresizingMaskIntoConstraints="NO" id="G7c-qX-Uj4">
+                                <rect key="frame" x="-55" y="333" width="527" height="372"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kaf-3a-lkT"/>
+                        <color key="backgroundColor" red="0.98823529480000005" green="0.97254902119999997" blue="0.84313726430000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <connections>
+                        <outlet property="Descripcion" destination="3UO-lY-FQ4" id="2De-Qq-2Qa"/>
+                        <outlet property="Imagen" destination="DoB-y0-6AI" id="cyB-zE-U6g"/>
+                        <outlet property="Titulo" destination="UJM-Uf-wlq" id="9XU-bP-LbO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K4s-Ld-Dl5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2307.6335877862593" y="450.7042253521127"/>
+        </scene>
+        <!--Agregar Nota-->
+        <scene sceneID="ujr-j5-195">
+            <objects>
+                <viewController title="Agregar Nota" modalPresentationStyle="fullScreen" id="8ER-Uc-DNk" customClass="Nota" customModule="Proyecto_final_Diario_depresion" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wby-4h-odb">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="803"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOn-ik-SXj">
+                                <rect key="frame" x="68" y="632" width="98" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.83631234217171713" green="0.46372842303998313" blue="0.27612484768696638" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Guardar nota">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleCaption1"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="Guardar_Nota:" destination="8ER-Uc-DNk" eventType="touchUpInside" id="ydI-2A-ThJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ns-lT-NKb">
+                                <rect key="frame" x="222" y="633" width="97" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.83631234217171713" green="0.46372842303998313" blue="0.27612484768696638" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Limpiar Nota">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleCaption1"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="Limpiar_Nota:" destination="8ER-Uc-DNk" eventType="touchUpInside" id="lPg-Gp-mHT"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingresa el titulo de la Notita" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Za-Hl-BQP">
+                                <rect key="frame" x="46" y="141" width="307" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.8681017250286891" green="0.90769931834913187" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Crear Recordatorio" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mE6-1U-EOe">
+                                <rect key="frame" x="8" y="59" width="385" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="38"/>
+                                <color key="textColor" red="0.83631234217171713" green="0.50460702901552767" blue="0.44808243262552788" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pizarron_pantalla_carga" translatesAutoresizingMaskIntoConstraints="NO" id="4cB-Uk-i3M">
+                                <rect key="frame" x="-100" y="258" width="592" height="330"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Ingresa tu recordatorio aqui" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dp0-oy-Ovl">
+                                <rect key="frame" x="76" y="332" width="240" height="243"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LYT-Yo-C9B"/>
+                        <color key="backgroundColor" red="0.98823529480000005" green="0.96862745289999996" blue="0.84313726430000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Recordatorio" springLoaded="YES" id="sPZ-gO-yHi">
+                        <imageReference key="image" image="note.text.badge.plus" catalog="system" symbolScale="small"/>
+                        <imageReference key="selectedImage" image="note.text.badge.plus" catalog="system" symbolScale="default"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="Ingresar_texto_nota" destination="dp0-oy-Ovl" id="Cjt-tc-icb"/>
+                        <outlet property="Ingresar_titulo_Nota" destination="8Za-Hl-BQP" id="bF2-g2-bXR"/>
+                        <outlet property="Titulo" destination="mE6-1U-EOe" id="5Fb-BL-bEb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PDu-fn-HYk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1267.9389312977098" y="1196.4788732394368"/>
+        </scene>
+        <!--Emergencia-->
+        <scene sceneID="qod-Gy-Tfh">
+            <objects>
+                <viewController id="0XJ-5X-nim" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8EQ-tD-A0x">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="803"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Emergencias" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="edg-Dp-mYl">
+                                <rect key="frame" x="4" y="87" width="385" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="38"/>
+                                <color key="textColor" red="0.83631234219999995" green="0.50460702899999998" blue="0.44808243260000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="621-FI-KFN">
+                                <rect key="frame" x="84" y="209" width="224" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="crisis anciedad" title=""/>
+                                <connections>
+                                    <segue destination="MMc-jB-Xxy" kind="presentation" id="8w5-pK-umO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pg6-jS-3Oe">
+                                <rect key="frame" x="84" y="322" width="224" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="suicidio" title=""/>
+                                <connections>
+                                    <segue destination="vvS-sf-yMN" kind="presentation" id="P8y-gE-hgp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nq0-qo-P1i">
+                                <rect key="frame" x="84" y="450" width="224" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="crisis hipertensiva" title=""/>
+                                <connections>
+                                    <segue destination="Ck3-TF-wl8" kind="presentation" id="HgU-zB-ZRR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uDB-Sq-3yS">
+                                <rect key="frame" x="84" y="579" width="224" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="crisis diabetica" title=""/>
+                                <connections>
+                                    <segue destination="jgo-Pr-H1y" kind="presentation" id="IKS-rC-rVM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="IpX-qW-pQa"/>
+                        <color key="backgroundColor" red="0.98823529480000005" green="0.97254902119999997" blue="0.84313726430000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Emergencia" selectedImage="waveform.path.ecg.text.rtl" catalog="system" id="6Xw-Sf-Sej">
+                        <imageReference key="image" image="waveform.path.ecg.text.rtl" catalog="system" symbolScale="default"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tap-vl-Wlr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1021" y="-2917"/>
+        </scene>
+        <!--Crisis_ansiedad_view-->
+        <scene sceneID="Rmw-33-vnb">
+            <objects>
+                <viewController title="Crisis_ansiedad_view" id="MMc-jB-Xxy" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SQO-3e-x2p">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Crisis de ansiedad" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ww0-yw-R5K">
+                                <rect key="frame" x="4" y="58" width="385" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="38"/>
+                                <color key="textColor" red="0.83631234219999995" green="0.50460702899999998" blue="0.44808243260000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nxj-6i-XSh">
+                                <rect key="frame" x="52" y="745" width="288" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Llamar a servicios de emergencia">
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" systemColor="systemRedColor"/>
+                                </buttonConfiguration>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="perrito_gato" translatesAutoresizingMaskIntoConstraints="NO" id="DjJ-q8-iL4">
+                                <rect key="frame" x="113" y="561" width="167" height="185"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="TAf-VS-FgF"/>
+                        <color key="backgroundColor" red="0.98823529480000005" green="0.97254902119999997" blue="0.84313726430000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GJA-ia-mQG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2185.4961832061067" y="-3231.6901408450708"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="aSZ-Vf-d4G">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="on8-OD-iZ4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" alpha="0.94999999999999996" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" itemPositioning="centered" id="laz-Ze-pwq">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="1" green="0.74901960784313726" blue="0.87450980392156863" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" systemColor="labelColor"/>
+                        <color key="barTintColor" red="1" green="0.6470588235294118" blue="0.77254901960784317" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" systemColor="viewFlipsideBackgroundColor"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="xtW-2A-e3r"/>
+                        <segue destination="8ER-Uc-DNk" kind="relationship" relationship="viewControllers" id="t5j-bj-obP"/>
+                        <segue destination="C5N-UB-uG7" kind="relationship" relationship="viewControllers" id="EkQ-hl-MqI"/>
+                        <segue destination="0XJ-5X-nim" kind="relationship" relationship="viewControllers" id="ug6-6x-DqV"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bSB-Dl-1LR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="64.885496183206101" y="-34.507042253521128"/>
+        </scene>
+        <!--Ver nota-->
+        <scene sceneID="xKv-vO-ue1">
+            <objects>
+                <viewController title="Ver nota" modalPresentationStyle="fullScreen" id="62x-Qu-EqK" customClass="Ver_Nota" customModule="Proyecto_final_Diario_depresion" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UD3-DJ-4qw">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pizarron_pantalla_carga" translatesAutoresizingMaskIntoConstraints="NO" id="oik-su-nau">
+                                <rect key="frame" x="-46" y="216" width="511" height="420"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Crear Notita" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ebZ-C9-RVP">
+                                <rect key="frame" x="4" y="83" width="385" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="38"/>
+                                <color key="textColor" red="0.83631234219999995" green="0.50460702899999998" blue="0.44808243260000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ymx-Uf-RId">
+                                <rect key="frame" x="132" y="652" width="129" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Volver a Inicio"/>
+                                <connections>
+                                    <action selector="Button_ir_a_inicio:" destination="62x-Qu-EqK" eventType="touchUpInside" id="SMS-uM-VlP"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Cambiar titulo de la nota" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uoh-hs-VZz">
+                                <rect key="frame" x="73" y="143" width="246" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2GZ-PL-wP8">
+                                <rect key="frame" x="132" y="721" width="125" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Eliminar Nota"/>
+                                <connections>
+                                    <action selector="Borrar_la_nota:" destination="62x-Qu-EqK" eventType="touchUpInside" id="q7z-xT-IL8"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Ingresa tu nota aqui" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="nFF-qN-VdO">
+                                <rect key="frame" x="101" y="317" width="240" height="219"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eTq-jL-q4M"/>
+                        <color key="backgroundColor" red="0.98823529480000005" green="0.96862745289999996" blue="0.84313726430000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <connections>
+                        <outlet property="Cambiar_titulo_box" destination="uoh-hs-VZz" id="70d-Dh-nGy"/>
+                        <outlet property="Texto_Nota" destination="nFF-qN-VdO" id="24S-GO-jCt"/>
+                        <outlet property="Titulo_Nota" destination="ebZ-C9-RVP" id="lAM-OO-HAq"/>
+                        <segue destination="on8-OD-iZ4" kind="presentation" identifier="Ver_nota_a_Inicio" id="C78-Be-0F2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X8d-OQ-T06" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2409.9236641221373" y="-794.36619718309862"/>
+        </scene>
+        <!--Intento_suicidio_view-->
+        <scene sceneID="mFy-KO-UNm">
+            <objects>
+                <viewController title="Intento_suicidio_view" id="vvS-sf-yMN" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ACK-JM-KMW">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Intento de suicidio" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nLd-PI-24h">
+                                <rect key="frame" x="-8" y="71" width="385" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="38"/>
+                                <color key="textColor" red="0.83631234219999995" green="0.50460702899999998" blue="0.44808243260000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ln2-Iq-OlO">
+                                <rect key="frame" x="52" y="749" width="288" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Llamar a servicios de emergencia">
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" systemColor="systemRedColor"/>
+                                </buttonConfiguration>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="panda" translatesAutoresizingMaskIntoConstraints="NO" id="LfH-ta-Apt">
+                                <rect key="frame" x="113" y="561" width="167" height="168"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="WSy-kd-ONt"/>
+                        <color key="backgroundColor" red="0.98823529480000005" green="0.97254902119999997" blue="0.84313726430000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FRa-Qm-ZeO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2183.969465648855" y="-2568.3098591549297"/>
+        </scene>
+        <!--Crisis_Hipertrnsiva_view-->
+        <scene sceneID="ia4-Nf-iHq">
+            <objects>
+                <viewController title="Crisis_Hipertrnsiva_view" id="Ck3-TF-wl8" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8eE-Ye-rZ4">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Crisis hipertensiva" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JNF-71-XRY">
+                                <rect key="frame" x="8" y="51" width="385" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="38"/>
+                                <color key="textColor" red="0.83631234219999995" green="0.50460702899999998" blue="0.44808243260000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eRh-CL-DcD">
+                                <rect key="frame" x="56" y="751" width="288" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Llamar a servicios de emergencia">
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" systemColor="systemRedColor"/>
+                                </buttonConfiguration>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="baumanometro" translatesAutoresizingMaskIntoConstraints="NO" id="Tn7-uY-Md0">
+                                <rect key="frame" x="131" y="564" width="139" height="179"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RQ7-Rv-iCu"/>
+                        <color key="backgroundColor" red="0.98823529480000005" green="0.97254902119999997" blue="0.84313726430000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1vl-Sx-RwZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1435.8778625954199" y="-3585.211267605634"/>
+        </scene>
+        <!--Crisis_Diabetica_view-->
+        <scene sceneID="pWv-8c-bDO">
+            <objects>
+                <viewController title="Crisis_Diabetica_view" id="jgo-Pr-H1y" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IOd-Ml-4Ql">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Crisis diabetica" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ly-Ue-wSd">
+                                <rect key="frame" x="16" y="57" width="385" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="38"/>
+                                <color key="textColor" red="0.83631234219999995" green="0.50460702899999998" blue="0.44808243260000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8F0-po-A5f">
+                                <rect key="frame" x="52" y="741" width="288" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Llamar a servicios de emergencia">
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" systemColor="systemRedColor"/>
+                                </buttonConfiguration>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="glucometro" translatesAutoresizingMaskIntoConstraints="NO" id="wPt-r6-N91">
+                                <rect key="frame" x="139" y="545" width="139" height="179"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8Op-wX-xfC"/>
+                        <color key="backgroundColor" red="0.98823529480000005" green="0.97254902119999997" blue="0.84313726430000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JI4-PU-ETR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="548.85496183206101" y="-3585.211267605634"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="1oR-ph-a4y"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="Hacer Ejercicio" width="200" height="71"/>
+        <image name="baumanometro" width="512" height="512"/>
+        <image name="beber agua" width="200" height="71"/>
+        <image name="calendar" catalog="system" width="128" height="107"/>
+        <image name="crisis anciedad" width="200" height="71"/>
+        <image name="crisis diabetica" width="200" height="71"/>
+        <image name="crisis hipertensiva" width="200" height="71"/>
+        <image name="despertar temprano" width="200" height="71"/>
+        <image name="dulce" width="626" height="626"/>
+        <image name="flecha" width="90" height="47"/>
+        <image name="frutas y verduras" width="200" height="71"/>
+        <image name="glucometro" width="980" height="980"/>
+        <image name="note.text.badge.plus" catalog="system" width="128" height="109"/>
+        <image name="panda" width="332" height="411"/>
+        <image name="perrito_gato" width="612" height="408"/>
+        <image name="person.circle" catalog="system" width="128" height="123"/>
+        <image name="pizarron_pantalla_carga" width="600" height="470"/>
+        <image name="suicidio" width="200" height="71"/>
+        <image name="waveform.path.ecg.text.rtl" catalog="system" width="101" height="128"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="viewFlipsideBackgroundColor">
+            <color red="0.12156862745098039" green="0.12941176470588237" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
